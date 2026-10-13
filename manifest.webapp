@@ -1,0 +1,23 @@
+{
+  "name": "TubeFox",
+  "description": "A lightweight YouTube client for Firefox OS",
+  "version": "1.0.0",
+  "launch_path": "/index.html",
+  "type": "web",
+  "default_locale": "en",
+  "developer": {
+    "name": "xgbzdev",
+    "url": "https://null.com"
+  },
+  "icons": {
+    "60": "/icons/icon-60.png",
+    "90": "/icons/icon-90.png",
+    "128": "/icons/icon-128.png"
+  },
+  "orientation": ["portrait-primary", "landscape-primary"],
+  "permissions": {
+    "systemXHR": {
+      "description": "Needed to query the YouTube Data API"
+    }
+  }
+}

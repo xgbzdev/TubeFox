@@ -1,0 +1,46 @@
+* { box-sizing: border-box; -moz-box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: #181818; color: #f1f1f1;
+  font-family: "Fira Sans", sans-serif; font-size: 16px; }
+.hidden { display: none !important; }
+
+#bar { position: fixed; top: 0; left: 0; right: 0; height: 52px; display: flex;
+  background: #c4302b; padding: 6px; z-index: 5; }
+#search-form { flex: 1; display: flex; }
+#q { flex: 1; border: 0; border-radius: 3px 0 0 3px; padding: 0 10px;
+  font-size: 16px; min-width: 0; }
+#search-form button { border: 0; background: #e8e8e8; width: 44px;
+  border-radius: 0 3px 3px 0; font-size: 18px; }
+#settings-btn { border: 0; background: transparent; color: #fff; font-size: 24px;
+  width: 44px; }
+
+main { padding: 58px 0 20px; }
+.status { text-align: center; color: #aaa; padding: 0 12px; }
+
+#results { list-style: none; margin: 0; padding: 0; }
+#results li { display: block; padding: 10px 12px; border-bottom: 1px solid #2b2b2b; }
+#results li:active { background: #2b2b2b; }
+.thumb { width: 100%; padding-top: 56.25%; position: relative; background: #000 center/cover no-repeat; }
+.thumb .dur { position: absolute; right: 4px; bottom: 4px; background: rgba(0,0,0,.8);
+  padding: 1px 5px; font-size: 12px; border-radius: 2px; }
+.title { margin: 8px 0 2px; font-size: 15px; line-height: 1.25; }
+.meta { color: #aaa; font-size: 12px; }
+
+#more { display: block; margin: 14px auto; padding: 10px 24px; border: 0;
+  background: #c4302b; color: #fff; border-radius: 3px; font-size: 15px; }
+
+#player-view, #settings-view { position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  background: #181818; z-index: 10; overflow-y: auto; }
+.player-bar { background: #c4302b; padding: 6px; height: 52px; }
+.player-bar button { height: 40px; border: 0; background: transparent; color: #fff; font-size: 18px; }
+.player-wrap { position: relative; width: 100%; padding-top: 56.25%; background: #000; }
+.player-wrap iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+#player-title { font-size: 17px; margin: 12px; }
+#player-channel { color: #aaa; margin: 0 12px 10px; }
+#player-open { display: inline-block; margin: 0 12px; color: #6cb8ff; }
+
+.settings-body { padding: 14px; }
+.settings-body label { display: block; margin: 14px 0 4px; color: #ccc; }
+.settings-body input { width: 100%; padding: 10px; font-size: 16px; border: 0; border-radius: 3px; }
+.hint { color: #999; font-size: 13px; }
+#save-settings { margin-top: 18px; padding: 10px 28px; border: 0; background: #c4302b;
+  color: #fff; border-radius: 3px; font-size: 16px; }

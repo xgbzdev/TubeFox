@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>TubeFox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="bar">
+    <form id="search-form">
+      <input id="q" type="search" placeholder="Search YouTube" autocomplete="off">
+      <button type="submit" aria-label="Search">&#128269;</button>
+    </form>
+    <button id="settings-btn" aria-label="Settings">&#9881;</button>
+  </header>
+
+  <main>
+    <p id="status" class="status"></p>
+    <ul id="results"></ul>
+    <button id="more" class="hidden">Load more</button>
+  </main>
+
+  <section id="player-view" class="hidden">
+    <div class="player-bar">
+      <button id="close-player">&#8592; Back</button>
+    </div>
+    <div class="player-wrap">
+      <iframe id="player" allowfullscreen frameborder="0"
+              allow="autoplay; encrypted-media; fullscreen"></iframe>
+    </div>
+    <h2 id="player-title"></h2>
+    <p id="player-channel"></p>
+    <a id="player-open" target="_blank" rel="noopener">Open on YouTube</a>
+  </section>
+
+  <section id="settings-view" class="hidden">
+    <div class="player-bar">
+      <button id="close-settings">&#8592; Back</button>
+    </div>
+    <div class="settings-body">
+      <h2>Settings</h2>
+      <label for="api-key">YouTube Data API v3 key</label>
+      <input id="api-key" type="text" placeholder="AIza..." autocomplete="off">
+      <p class="hint">
+        Create a free key in the Google Cloud Console, enable
+        "YouTube Data API v3", and paste it here. It is stored only on this device.
+      </p>
+      <label for="region">Region code (for Trending)</label>
+      <input id="region" type="text" maxlength="2" placeholder="US">
+      <button id="save-settings">Save</button>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
